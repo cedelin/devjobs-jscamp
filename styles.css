@@ -76,22 +76,42 @@ header {
     font-size: 14px;
     margin-bottom: 30px;
 }
-
+.buscador {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.buscador form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 .buscador__input {
     border: 1px solid #ffffff25;
     background: #18222e;
     border-radius: .35rem;
-    padding: 0.85rem;
-    width: 100%;
+    padding: 0.85rem 3.5rem 0.85rem 0.85rem;
+    width:100%;
+    color: #ffffff;
+    height: 60px;
+    font-size: 16px;
+}
+.buscador input::placeholder {
+  color: #ffffffb6;
+  text-align:left;
 }
 .buscador__icono {
-    margin: 6px 6px 6px 24px;
-    position: relative;
-    bottom: 39px;
-    left: 92%;
-    opacity: 40%;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+    stroke: #ffffffb6;
 }
 .filtros {
+    flex-basis: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -110,14 +130,15 @@ header {
 }
 .trabajo__tarjeta {
     border: 1px solid #ffffff25;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     height: fit-content;
     border-radius: 6px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .resultado-busqueda__titulo {
     font-size: 24px;
-    padding-bottom: 18px;
+    padding: 24px 24px 24px 0;
+    margin: 4px 4px 4px 0;
 }
 .trabajo__rol {
     font-size: 18px;
@@ -144,7 +165,7 @@ header {
     border: 0px;
     position: relative;
     left: 92%;
-    bottom: 70px;
+    bottom: 86px;
 }
 footer {
     text-align: center;
