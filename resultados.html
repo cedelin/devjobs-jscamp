@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DevJobs - Resultados de Búsqueda</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<img class="header__logo" src="./logo.svg"/>
+		<h1 class="header__titulo">DevJobs</h1>
+		<nav class="nav-principal">
+			<a class="nav-principal__link" href="">Inicio</a>
+			<a class="nav-principal__link"href="">Empleos</a>
+			<a class="nav-principal__link"href="">Empresas</a>
+			<a class="nav-principal__link"href="">Salarios</a>
+		</nav>
+		<div class="user-menu">
+			<button class="user-menu__botón" href="">Subir CV</button>
+			<img class="user-menu__avatar" src="./Foto_De_Perfil_CV_BootCamp.png"/>
+		</div>
+	</header>
+	<main>
+		<section class="hero">
+		<h2 class="hero__titulo">Encuentra tu próximo trabajo</h2>
+		<p class="hero__parrafo">Explora miles de opotunidades en el sector tecnológico.</p>
+		</section>
+		<section class="buscador">
+			<form class="buscador__formulario" role="search">
+				<input class="buscador__input" required type="text"
+				placeholder="Buscar trabajos, empresas o habilidades"
+				aria-label="Buscar trabajos, empresas o habilidades">
+			</form>
+			<svg class="buscador__icono" xmlns="http://www.w3.org/2000/svg"  
+			width="24"  height="24"  viewBox="0 0 24 24"  
+			fill="none"  stroke="currentColor"  
+			stroke-width="1.5"  stroke-linecap="round"
+			stroke-linejoin="round"
+			class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+			<path stroke="none" d="M0 0h24v24H0z"
+			fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+			<path d="M21 21l-6 -6" />
+			</svg>
+			<div class="filtros">
+				<select class="buscador__filtros">
+					<option class="buscador__filtro--disabled" value="" disabled selected>Tecnología</option>
+					<option class="buscador__filtro" value="Frontend">Frontend</option>
+					<option class="buscador__filtro" value="Backend">Backend</option>
+					<option class="buscador__filtro" value="FullStack">FullStack</option>
+					<option class="buscador__filtro" value="Base_De_Datos">Base De Datos</option>
+				</select>
+				<select class="buscador__filtros">
+					<option class="buscador__filtro--disabled" value="" disabled selected>Ubicación</option>
+					<option class="buscador__filtro" value="Madrid">Madrid</option>
+					<option class="buscador__filtro" value="Barcelona">Barcelona</option>
+					<option class="buscador__filtro" value="Bilbao">Bilbao</option>
+					<option class="buscador__filtro" value="Sevilla">Sevilla</option>
+				</select>
+				<select class="buscador__filtros">
+					<option class="buscador__filtro--disabled" value="" disabled selected>Tipo de contrato</option>
+					<option class="buscador__filtro" value="Jornada_Completa">Jornada Completa</option>
+					<option class="buscador__filtro" value="Media_Jornada">Media Jornada</option>
+					<option class="buscador__filtro" value="Temporal">Temporal</option>
+					<option class="buscador__filtro" value="Indefinido">Indefinido</option>
+				</select>
+				<select class="buscador__filtros">
+					<option class="buscador__filtro--disabled" value="" disabled selected>Nivel de experiencia</option>
+					<option class="buscador__filtro" value="Junior">0 - 2 años</option>
+					<option class="buscador__filtro" value="Middle">3 - 9 años</option>
+					<option class="buscador__filtro" value="Senior">Más de 10 años</option>
+				</select>
+			</div>
+		</section>
+		<section class="resultado-busqueda">
+			<h3 class="resultado-busqueda__titulo">Resultados de busqueda</h3>
+			<article class="trabajo__tarjeta">
+				<h2 class="trabajo__rol">Ingeniero de Software</h2>
+				<h3 class="trabajo__empresa">Tech Solutions Inc. | Remoto</h3>
+				<p class="trabajo__descripción">Buscamos un ingeniero de software con experiencia en desarrollo web
+					y conocimientos en JavaScript, React y Node.js. El candidato ideal
+					debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.</p>
+				<button class="trabajo-aplicar__botón">Aplicar</button>
+			</article>
+			<article class="trabajo__tarjeta">
+				<h2 class="trabajo__rol">Analista de Datos</h2>
+				<h3 class="trabajo__empresa">Data Driven Co. | Madrid</h3>
+				<p class="trabajo__descripción">Estamos buscado un analista de datos con experiencia en el manejo de grandes
+					conjuntos de datos y herramientas de visualización. Se requiere conocimientos en SQL, Python y R.</p>
+				<button class="trabajo-aplicar__botón">Aplicar</button>
+			</article>
+			<article class="trabajo__tarjeta">
+				<h2 class="trabajo__rol">Desarrollador de Aplicaciones Móviles</h2>
+				<h3 class="trabajo__empresa">Mobile Apps Ltd. | Barcelona</h3>
+				<p class="trabajo__descripción">Buscamos un desarrollador de aplciaciones móviles con experiencia en iOS y/o Android.
+					El candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de
+					interfaces de usuario.</p>
+				<button class="trabajo-aplicar__botón">Aplicar</button>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<nav class="pag-footer" aria-label="Paginación de resultados">
+			<ul>
+				<li><a href="#">Anterior</a></li>
+				<li><a href="#" class="active">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">Siguiente</a></li>
+			</ul>
+		</nav>
+		<p>© 2025 - DevJobs. Todos los derechos reservados.</p>
+	</footer>
+</body>
